@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosana Coelho | Terapeuta Integrativa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --lavanda-light: #f3f0ff;
+            --lavanda-medium: #e5dbff;
+            --lavanda-dark: #9775fa;
+            --text-color: #495057;
+            --title-color: #2b2d42;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.8;
+            color: var(--text-color);
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--lavanda-light);
+            padding: 80px 20px;
+            text-align: center;
+            border-bottom: 1px solid var(--lavanda-medium);
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            color: var(--title-color);
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--lavanda-dark);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 300;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        /* Estilo da Foto de Perfil */
+        .profile-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--lavanda-light);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--title-color);
+            border-bottom: 2px solid var(--lavanda-medium);
+            display: inline-block;
+            margin-bottom: 25px;
+        }
+
+        .intro-text {
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+
+        .registro-tag {
+            display: inline-block;
+            background-color: var(--lavanda-light);
+            color: var(--lavanda-dark);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border: 1px solid var(--lavanda-medium);
+            margin-top: 10px;
+            letter-spacing: 0.5px;
+        }
+
+        .cards-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background-color: var(--lavanda-light);
+            padding: 30px;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: var(--lavanda-dark);
+            margin-top: 0;
+        }
+
+        .quote {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1.3rem;
+            text-align: center;
+            color: var(--lavanda-dark);
+            margin: 40px 0;
+            padding: 20px;
+            border-left: 4px solid var(--lavanda-medium);
+            background: #fbfaff;
+        }
+
+        .note {
+            font-size: 0.9rem;
+            color: #868e96;
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+
+        .cta-section {
+            text-align: center;
+            background-color: var(--lavanda-light);
+            padding: 60px 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background-color: var(--lavanda-dark);
+            color: white !important;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: background 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: #845ef7;
+        }
+
+        .email-display {
+            display: block;
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: #868e96;
+            font-weight: 300;
+        }
+
+        .links-iniciativas {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .link-extra {
+            color: var(--lavanda-dark);
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 0.95rem;
+            border-bottom: 1px solid var(--lavanda-medium);
+            transition: all 0.3s ease;
+        }
+
+        .link-extra:hover {
+            color: var(--title-color);
+            border-bottom-color: var(--lavanda-dark);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 0.85rem;
+            color: #868e96;
+            border-top: 1px solid #f1f3f5;
+        }
+
+        @media (max-width: 600px) {
+            .cards-container {
+                grid-template-columns: 1fr;
+            }
+            h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Rosana Coelho</h1>
+        <div class="subtitle">Terapeuta Integrativa</div>
+    </header>
+
+    <div class="container">
+        
+        <div class="profile-container">
+            <img src="https://ugc.production.linktr.ee/c8433f0b-3db6-41c2-817a-953216394138_photo-2024-08-08-15-06-48.jpeg?io=true&size=avatar-v3_0" alt="Rosana Coelho" class="profile-img">
+        </div>
+
+        <section>
+            <h2>Apresentação</h2>
+            <p class="intro-text">
+                Olá, sou <strong>Rosana Coelho</strong>, Terapeuta Integrativa em formação. Ofereço um espaço seguro, ético e profundamente acolhedor para quem sente a necessidade de compartilhar o que traz no peito e ser ouvido com presença real.
+            </p>
+            <p class="intro-text">
+                Meu trabalho une a clareza da <strong>Filosofia</strong>, a profundidade da <strong>Espiritualidade</strong> e o cuidado das <strong>Práticas Integrativas e Complementares em Saúde (PICS)</strong>, das quais sou estudante, visando sempre o seu equilíbrio e bem-estar integral.
+                <br>
+                <span class="registro-tag">Registro CRTH 18391 ABRATH</span>
+            </p>
+        </section>
+
+        <section>
+            <h2>Como funciona o acolhimento</h2>
+            <p>Ofereço duas formas de conexão, respeitando o seu tempo e a sua forma de se expressar:</p>
+            
+            <div class="cards-container">
+                <div class="card">
+                    <h3>Voz</h3>
+                    <p>Via Google Meet. Um encontro com data e hora marcada para uma escuta ativa e diálogo humanizado.</p>
+                </div>
+                <div class="card">
+                    <h3>Escrita Terapêutica</h3>
+                    <p>Via E-mail. Ideal para quem prefere organizar sentimentos, silêncios e reflexões através do tempo das palavras.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="quote">
+            "A fala só é bonita quando nasce de uma longa escuta." <br>
+            <small>— Rubem Alves</small>
+        </div>
+
+        <section>
+            <h2>Minha Abordagem</h2>
+            <p>Aqui, sua história é recebida com respeito e sem julgamentos. Busco, através da escuta, ajudar você a organizar o pensamento e encontrar novos sentidos para os desafios da vida.</p>
+            <p>Proponho um diálogo para que você possa externalizar dores, dúvidas ou vitórias com total segurança e sigilo.</p>
+            
+            <div class="note">
+                <strong>Nota:</strong> Minha prática é terapêutica e focada no bem-estar, não substituindo tratamentos psicológicos ou médicos estruturados.
+            </div>
+        </section>
+    </div>
+
+    <div class="cta-section">
+        <h3>Sua voz importa e merece ser ouvida.</h3>
+        <p>Se você busca um porto seguro para refletir sobre sua jornada com mais leveza, vamos conversar?</p>
+        <a href="mailto:devoescrever@gmail.com" class="btn">Iniciar uma conversa ✨</a>
+        <span class="email-display">devoescrever@gmail.com</span>
+    </div>
+
+    <div class="links-iniciativas">
+        <a href="https://linktr.ee/RosanadeJesusCoelho" target="_blank" class="link-extra">Conheça minhas iniciativas</a>
+    </div>
+
+    <footer>
+        &copy; 2026 Rosana Coelho - Feito com simplicidade e presença.
+    </footer>
+
+</body>
+</html>
